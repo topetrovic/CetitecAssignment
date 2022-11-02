@@ -10,9 +10,7 @@
 Assignment::API api;
 
 void writer() {
-	for (int i = 0; i < 10; ++i) {
-		api.write('a' + i);
-	}
+	api.write("sfuwoaoubwafbuoafwoub");
 	
 }
 

@@ -8,9 +8,9 @@ namespace Assignment {
 		std::string s;
 		std::condition_variable cv;
 	public:
-		void write(char input) {
+		void write(std::string input) {
 			m.lock();
-			s.push_back(input);
+			s+=input;
 			std::cout << "Writing thread " << std::this_thread::get_id() << " is writing value: " << input << std::endl;
 			m.unlock();
 			cv.notify_one();
